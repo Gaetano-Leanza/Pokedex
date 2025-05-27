@@ -1,0 +1,105 @@
+.header {
+  background-color: #082129;
+  width: 100%;
+  height: 100px;
+}
+
+.header-container {
+  width: 1200px;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.header-icon {
+  height: 100px;
+}
+
+.menu-input {
+  padding: 0.5rem 1rem;
+  margin-top: 15px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  width: 200px;
+}
+
+#searchResults {
+  list-style: none;
+  padding: 0;
+  margin-top: 0.5rem;
+}
+
+#searchResults li {
+  padding: 0.5rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.startseite-link {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+}
+
+.startseite-link:hover {
+  color: #ddd;
+  text-decoration: underline;
+}
+
+.footer {
+  background-color: #082129;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-container {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.foot-middle-rights {
+  height: 50px;
+  margin-top: 10px;
+  color: white;
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+.foot-middle-links {
+  height: 30px;
+  margin-top: 2px;
+  margin-bottom: 0px;
+}
+
+.foot-middle-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.foot-middle-links a:hover {
+  color: #ddd;
+  text-decoration: underline;
+}
+
+@media (max-width: 1024px) {
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 450px) {
+}
+
+@media (min-width: 1200px) {
+}
