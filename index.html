@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="./styles/standard.css" />
+    <link rel="stylesheet" href="./styles/headerAndFooter.css" />
+    <link rel="stylesheet" href="./styles/sites.css" />
+    <link rel="stylesheet" href="./style.css" />
+
+    <link rel="icon" type="image/png" href="assets/img/Favicon/favicon.ico" />
+  </head>
+
+  <body onload="fetchDataJson()">
+    <header class="header">
+      <div class="header-container">
+        <div class="header-container-left">
+          <img
+            class="header-icon"
+            src="./assets/img/Logo/Logo.PNG"
+            alt="Pokedex Logo"
+          />
+        </div>
+        <div class="header-container-right">
+          <input
+            type="text"
+            id="searchInput"
+            class="menu-input"
+            placeholder="Suche..."
+            aria-label="Eingabefeld"
+          />
+          <ul id="searchResults"></ul>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div id="terms"></div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <p class="foot-middle-rights">
+          © 2025 Pokedex <br />
+          Alle Rechte vorbehalten.
+        </p>
+        <p class="foot-middle-links">
+          <a href="../sites/impressum.html">Impressum</a> |
+          <a href="../sites/datenschutz.html">Datenschutz</a> 
+        </p>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
