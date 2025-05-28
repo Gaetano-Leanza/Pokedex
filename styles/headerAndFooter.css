@@ -5,12 +5,15 @@
 }
 
 .header-container {
-  width: 1200px;
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 16px;
   height: 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
+  box-sizing: border-box;
 }
 
 .header-icon {
