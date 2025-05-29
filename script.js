@@ -30,7 +30,7 @@ async function fetchDataJson(page = 0) {
     }));
 
     renderTerms(pageData);
-    renderPaginationControls(baseData.next != null); 
+    renderPaginationControls(baseData.next != null);
   } catch (error) {
     container.innerHTML = `<div class="loading">Fehler beim Laden: ${error.message}</div>`;
   }

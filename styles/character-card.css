@@ -45,18 +45,6 @@
   padding: 12px 15px;
 }
 
-.pokemon-id {
-  background: rgba(255, 255, 255, 0.2);
-  border-radius: 50%;
-  width: 30px;
-  height: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 0.8em;
-  font-weight: bold;
-}
-
 .card-content {
   padding: 20px;
   background: none;
@@ -174,177 +162,166 @@
   background: linear-gradient(to bottom, #705848, #5a473a);
 }
 
-.character-card {
-  border-radius: 15px;
-  overflow: hidden;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-  transition: all 0.3s ease;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  background: linear-gradient(to bottom, #a8a878, #8d8d5a);
-}
-
 .character-card.type-normal {
   background: linear-gradient(
     to bottom,
-    rgba(231, 235, 213, 0.493),
-    rgba(231, 235, 213, 0.05)
+    rgba(200, 200, 160, 0.5),
+    rgba(180, 180, 100, 0.1)
   );
-  border: 2px solid rgba(202, 202, 125, 0.5);
+  border: 2px solid rgba(200, 200, 160, 0.6);
 }
 
 .character-card.type-grass {
   background: linear-gradient(
     to bottom,
-    rgba(120, 200, 80, 0.2),
-    rgba(120, 200, 80, 0.05)
+    rgba(102, 255, 102, 0.5),
+    rgba(51, 204, 51, 0.1)
   );
-  border: 2px solid rgba(92, 169, 53, 0.5);
+  border: 2px solid rgba(102, 255, 102, 0.6);
 }
 
 .character-card.type-fire {
   background: linear-gradient(
     to bottom,
-    rgba(240, 128, 48, 0.2),
-    rgba(240, 128, 48, 0.05)
+    rgba(255, 102, 0, 0.5),
+    rgba(204, 51, 0, 0.1)
   );
-  border: 2px solid rgba(213, 103, 35, 0.5);
+  border: 2px solid rgba(255, 102, 0, 0.6);
 }
 
 .character-card.type-water {
   background: linear-gradient(
     to bottom,
-    rgba(104, 144, 240, 0.2),
-    rgba(104, 144, 240, 0.05)
+    rgba(102, 153, 255, 0.5),
+    rgba(51, 102, 255, 0.1)
   );
-  border: 2px solid rgba(74, 108, 211, 0.5);
-}
-
-.character-card.type-poison {
-  background: linear-gradient(
-    to bottom,
-    rgba(160, 64, 160, 0.2),
-    rgba(160, 64, 160, 0.05)
-  );
-  border: 2px solid rgba(125, 48, 125, 0.5);
+  border: 2px solid rgba(51, 102, 255, 0.6);
 }
 
 .character-card.type-electric {
   background: linear-gradient(
     to bottom,
-    rgba(248, 208, 48, 0.2),
-    rgba(248, 208, 48, 0.05)
+    rgba(255, 255, 102, 0.5),
+    rgba(255, 221, 0, 0.1)
   );
-  border: 2px solid rgba(212, 182, 42, 0.5);
+  border: 2px solid rgba(255, 221, 0, 0.6);
 }
 
-.character-card.type-ice {
+.character-card.type-poison {
   background: linear-gradient(
     to bottom,
-    rgba(152, 216, 216, 0.2),
-    rgba(152, 216, 216, 0.05)
+    rgba(204, 102, 255, 0.5),
+    rgba(153, 51, 204, 0.1)
   );
-  border: 2px solid rgba(127, 189, 189, 0.5);
-}
-
-.character-card.type-fighting {
-  background: linear-gradient(
-    to bottom,
-    rgba(192, 48, 40, 0.2),
-    rgba(192, 48, 40, 0.05)
-  );
-  border: 2px solid rgba(157, 39, 33, 0.5);
+  border: 2px solid rgba(153, 51, 204, 0.6);
 }
 
 .character-card.type-ground {
   background: linear-gradient(
     to bottom,
-    rgba(224, 192, 104, 0.2),
-    rgba(224, 192, 104, 0.05)
+    rgba(230, 190, 120, 0.5),
+    rgba(200, 160, 80, 0.1)
   );
-  border: 2px solid rgba(197, 167, 87, 0.5);
+  border: 2px solid rgba(230, 190, 120, 0.6);
 }
 
 .character-card.type-flying {
   background: linear-gradient(
     to bottom,
-    rgba(168, 144, 240, 0.2),
-    rgba(168, 144, 240, 0.05)
+    rgba(180, 150, 255, 0.5),
+    rgba(140, 110, 255, 0.1)
   );
-  border: 2px solid rgba(144, 112, 216, 0.5);
-}
-
-.character-card.type-psychic {
-  background: linear-gradient(
-    to bottom,
-    rgba(248, 88, 136, 0.2),
-    rgba(248, 88, 136, 0.05)
-  );
-  border: 2px solid rgba(217, 71, 112, 0.5);
+  border: 2px solid rgba(140, 110, 255, 0.6);
 }
 
 .character-card.type-bug {
   background: linear-gradient(
     to bottom,
-    rgba(168, 184, 32, 0.2),
-    rgba(168, 184, 32, 0.05)
+    rgba(192, 220, 60, 0.5),
+    rgba(156, 180, 30, 0.1)
   );
-  border: 2px solid rgba(141, 156, 26, 0.5);
-}
-
-.character-card.type-rock {
-  background: linear-gradient(
-    to bottom,
-    rgba(184, 160, 56, 0.2),
-    rgba(184, 160, 56, 0.05)
-  );
-  border: 2px solid rgba(154, 133, 48, 0.5);
-}
-
-.character-card.type-ghost {
-  background: linear-gradient(
-    to bottom,
-    rgba(112, 88, 152, 0.2),
-    rgba(112, 88, 152, 0.05)
-  );
-  border: 2px solid rgba(90, 73, 122, 0.5);
-}
-
-.character-card.type-dragon {
-  background: linear-gradient(
-    to bottom,
-    rgba(112, 56, 248, 0.2),
-    rgba(112, 56, 248, 0.05)
-  );
-  border: 2px solid rgba(92, 47, 209, 0.5);
-}
-
-.character-card.type-dark {
-  background: linear-gradient(
-    to bottom,
-    rgba(112, 88, 72, 0.2),
-    rgba(112, 88, 72, 0.05)
-  );
-  border: 2px solid rgba(90, 71, 58, 0.5);
-}
-
-.character-card.type-steel {
-  background: linear-gradient(
-    to bottom,
-    rgba(184, 184, 208, 0.2),
-    rgba(184, 184, 208, 0.05)
-  );
-  border: 2px solid rgba(154, 154, 177, 0.5);
+  border: 2px solid rgba(156, 180, 30, 0.6);
 }
 
 .character-card.type-fairy {
   background: linear-gradient(
     to bottom,
-    rgba(238, 153, 172, 0.2),
-    rgba(238, 153, 172, 0.05)
+    rgba(255, 170, 200, 0.5),
+    rgba(255, 140, 180, 0.1)
   );
-  border: 2px solid rgba(217, 130, 149, 0.5);
+  border: 2px solid rgba(255, 140, 180, 0.6);
+}
+
+.character-card.type-fighting {
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 80, 70, 0.5),
+    rgba(204, 40, 30, 0.1)
+  );
+  border: 2px solid rgba(204, 40, 30, 0.6);
+}
+
+.character-card.type-psychic {
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 102, 153, 0.5),
+    rgba(204, 51, 102, 0.1)
+  );
+  border: 2px solid rgba(204, 51, 102, 0.6);
+}
+
+.character-card.type-rock {
+  background: linear-gradient(
+    to bottom,
+    rgba(220, 190, 80, 0.5),
+    rgba(180, 160, 50, 0.1)
+  );
+  border: 2px solid rgba(180, 160, 50, 0.6);
+}
+
+.character-card.type-steel {
+  background: linear-gradient(
+    to bottom,
+    rgba(200, 200, 255, 0.5),
+    rgba(160, 160, 210, 0.1)
+  );
+  border: 2px solid rgba(160, 160, 210, 0.6);
+}
+
+.character-card.type-ice {
+  background: linear-gradient(
+    to bottom,
+    rgba(160, 255, 255, 0.5),
+    rgba(120, 220, 220, 0.1)
+  );
+  border: 2px solid rgba(120, 220, 220, 0.6);
+}
+
+.character-card.type-ghost {
+  background: linear-gradient(
+    to bottom,
+    rgba(150, 120, 200, 0.5),
+    rgba(110, 90, 170, 0.1)
+  );
+  border: 2px solid rgba(110, 90, 170, 0.6);
+}
+
+.character-card.type-dragon {
+  background: linear-gradient(
+    to bottom,
+    rgba(153, 102, 255, 0.5),
+    rgba(102, 51, 255, 0.1)
+  );
+  border: 2px solid rgba(102, 51, 255, 0.6);
+}
+
+.character-card.type-dark {
+  background: linear-gradient(
+    to bottom,
+    rgba(130, 100, 90, 0.5),
+    rgba(100, 70, 60, 0.1)
+  );
+  border: 2px solid rgba(100, 70, 60, 0.6);
 }
 
 .character-card:hover {
@@ -358,6 +335,17 @@
   align-items: center;
   min-height: 60px;
   padding: 10px;
+}
+
+.character-card h3,
+.character-card .card-title {
+  color: #fff;
+  text-shadow: 0 0 6px rgba(255, 255, 255, 0.5);
+}
+
+.character-card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2), 0 15px 30px rgba(0, 0, 0, 0.4);
 }
 
 .type-symbols-container {
@@ -379,58 +367,58 @@
   transition: all 0.3s ease;
 }
 
-.type-grass .type-symbol {
+.type-symbol .type-grass {
   background: rgba(92, 169, 53, 0.7);
 }
-.type-fire .type-symbol {
+.type-symbol .type-fire {
   background: rgba(213, 103, 35, 0.7);
 }
-.type-water .type-symbol {
+.type-symbol .type-water {
   background: rgba(74, 108, 211, 0.7);
 }
-.type-normal .type-symbol {
+.type-symbol .type-normal {
   background: rgba(141, 141, 102, 0.7);
 }
-.type-poison .type-symbol {
+.type-symbol .type-poison {
   background: rgba(125, 48, 125, 0.7);
 }
-.type-electric .type-symbol {
+.type-symbol .type-electric {
   background: rgba(212, 182, 42, 0.7);
 }
-.type-ice .type-symbol {
+.type-symbol .type-ice {
   background: rgba(127, 189, 189, 0.7);
 }
-.type-fighting .type-symbol {
+.type-symbol .type-fighting {
   background: rgba(157, 39, 33, 0.7);
 }
-.type-ground .type-symbol {
+.type-symbol .type-ground {
   background: rgba(197, 167, 87, 0.7);
 }
-.type-flying .type-symbol {
+.type-symbol .type-flying {
   background: rgba(144, 112, 216, 0.7);
 }
-.type-psychic .type-symbol {
+.type-symbol .type-psychic {
   background: rgba(217, 71, 112, 0.7);
 }
-.type-bug .type-symbol {
+.type-symbol .type-bug {
   background: rgba(141, 156, 26, 0.7);
 }
-.type-rock .type-symbol {
+.type-symbol .type-rock {
   background: rgba(154, 133, 48, 0.7);
 }
-.type-ghost .type-symbol {
+.type-symbol.type-ghost {
   background: rgba(90, 73, 122, 0.7);
 }
-.type-dragon .type-symbol {
+.type-symbol .type-dragon {
   background: rgba(92, 47, 209, 0.7);
 }
-.type-dark .type-symbol {
+.type-symbol .type-dark {
   background: rgba(90, 71, 58, 0.7);
 }
-.type-steel .type-symbol {
+.type-symbol .type-steel {
   background: rgba(154, 154, 177, 0.7);
 }
-.type-fairy .type-symbol {
+.type-symbol .type-fairy {
   background: rgba(217, 130, 149, 0.7);
 }
 
