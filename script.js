@@ -1,11 +1,16 @@
 let pokemonData = [];
+let currentPage = 0;
+const itemsPerPage = 20;
 
-async function fetchDataJson() {
+async function fetchDataJson(page = 0) {
   const container = document.getElementById("terms");
   container.innerHTML = '<div class="loading">Lade Pokémon...</div>';
 
+  const offset = page * itemsPerPage;
+  const url = `https://pokeapi.co/api/v2/pokemon?offset=${offset}&limit=${itemsPerPage}`;
+
   try {
-    const response = await fetch("https://pokeapi.co/api/v2/pokemon?limit=50");
+    const response = await fetch(url);
     const baseData = await response.json();
 
     const detailRequests = baseData.results.map((pokemon) =>
@@ -14,7 +19,7 @@ async function fetchDataJson() {
 
     const details = await Promise.all(detailRequests);
 
-    pokemonData = details.map((pokemon, index) => ({
+    const pageData = details.map((pokemon) => ({
       id: pokemon.id,
       fullName: pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1),
       imageUrl:
@@ -24,7 +29,8 @@ async function fetchDataJson() {
       primaryType: pokemon.types[0].type.name,
     }));
 
-    renderTerms();
+    renderTerms(pageData);
+    renderPaginationControls(baseData.next != null); 
   } catch (error) {
     container.innerHTML = `<div class="loading">Fehler beim Laden: ${error.message}</div>`;
   }
@@ -42,52 +48,52 @@ function getTypes(pokemon) {
 
 function getTypeSymbol(typeName) {
   const symbols = {
-    grass: '🌱',
-    fire: '🔥',
-    water: '💧',
-    electric: '⚡',
-    ice: '❄️',
-    fighting: '🥊',
-    poison: '☠️',
-    ground: '⛰️',
-    flying: '🕊️',
-    psychic: '🔮',
-    bug: '🐛',
-    rock: '🪨',
-    ghost: '👻',
-    dark: '🌑',
-    steel: '🛡️',
-    fairy: '🧚',
-    dragon: '🐉',
-    normal: '⭐'
+    grass: "🌱",
+    fire: "🔥",
+    water: "💧",
+    electric: "⚡",
+    ice: "❄️",
+    fighting: "🥊",
+    poison: "☠️",
+    ground: "⛰️",
+    flying: "🕊️",
+    psychic: "🔮",
+    bug: "🐛",
+    rock: "🪨",
+    ghost: "👻",
+    dark: "🌑",
+    steel: "🛡️",
+    fairy: "🧚",
+    dragon: "🐉",
+    normal: "⭐",
   };
-  return symbols[typeName] || '❓';
+  return symbols[typeName] || "❓";
 }
 
-
-
-function renderTerms() {
+function renderTerms(pageData) {
   const container = document.getElementById("terms");
   container.innerHTML = "";
-  
-  if (pokemonData.length === 0) {
+
+  if (pageData.length === 0) {
     container.innerHTML = '<div class="loading">Keine Pokémon gefunden</div>';
     return;
   }
-  
-  pokemonData.forEach(character => {
-    const card = document.createElement('div');
+
+  pageData.forEach((character) => {
+    const card = document.createElement("div");
     card.className = `character-card type-${character.primaryType}`;
-    
-    const typeSymbols = character.types.map(type => {
-      const typeName = type.type.name;
-      return `
+
+    const typeSymbols = character.types
+      .map((type) => {
+        const typeName = type.type.name;
+        return `
         <div class="type-symbol type-${typeName}">
           ${getTypeSymbol(typeName)}
         </div>
       `;
-    }).join('');
-    
+      })
+      .join("");
+
     card.innerHTML = `
       <div class="card-header">
         <span class="pokemon-id">#${character.id}</span>
@@ -107,6 +113,36 @@ function renderTerms() {
     `;
     container.appendChild(card);
   });
+}
+
+function renderPaginationControls(hasNextPage) {
+  const paginationContainer = document.getElementById("pagination");
+  paginationContainer.innerHTML = "";
+
+  const controls = document.createElement("div");
+  controls.className = "pagination-controls";
+
+  const backBtn = document.createElement("button");
+  backBtn.textContent = "⬅️ Zurück";
+  backBtn.disabled = currentPage === 0;
+  backBtn.onclick = () => {
+    if (currentPage > 0) {
+      currentPage--;
+      fetchDataJson(currentPage);
+    }
+  };
+
+  const nextBtn = document.createElement("button");
+  nextBtn.textContent = "Weiter ➡️";
+  nextBtn.disabled = !hasNextPage;
+  nextBtn.onclick = () => {
+    currentPage++;
+    fetchDataJson(currentPage);
+  };
+
+  controls.appendChild(backBtn);
+  controls.appendChild(nextBtn);
+  paginationContainer.appendChild(controls);
 }
 
 fetchDataJson();

@@ -358,7 +358,6 @@
   align-items: center;
   min-height: 60px;
   padding: 10px;
-  background: none !important; /
 }
 
 .type-symbols-container {
@@ -376,10 +375,9 @@
   height: 35px;
   border-radius: 50%;
   font-size: 18px;
-  box-shadow: 0 0 8px rgba(0,0,0,0.2);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
 }
-
 
 .type-grass .type-symbol {
   background: rgba(92, 169, 53, 0.7);
