@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./styles/headerAndFooter.css" />
     <link rel="stylesheet" href="./styles/sites.css" />
     <link rel="stylesheet" href="./styles/character-card.css" />
+    <link rel="stylesheet" href="./styles/cards-styling.css" />
     <link rel="stylesheet" href="./style.css" />
 
     <link rel="icon" type="image/png" href="assets/img/Favicon/favicon.ico" />
@@ -26,18 +27,17 @@
         <div class="header-container-right">
           <input
             type="text"
-            id="searchInput"
-            class="menu-input"
-            placeholder="Suche..."
-            aria-label="Eingabefeld"
+            id="pokemon-search"
+            placeholder="Pokémon suchen..."
+            autocomplete="off"
           />
-          <ul id="searchResults"></ul>
         </div>
       </div>
     </header>
 
     <main>
       <div id="terms"></div>
+      <div id="search-results"></div>
       <div id="pagination"></div>
       <br />
       <br />

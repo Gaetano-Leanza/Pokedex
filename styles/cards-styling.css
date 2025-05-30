@@ -1,0 +1,287 @@
+.type-grass {
+  background: linear-gradient(to bottom, #78c850, #5ca935);
+}
+.type-fire {
+  background: linear-gradient(to bottom, #f08030, #d56723);
+}
+.type-water {
+  background: linear-gradient(to bottom, #6890f0, #4a6cd3);
+}
+.type-poison {
+  background: linear-gradient(to bottom, #a040a0, #7d307d);
+}
+.type-flying {
+  background: linear-gradient(to bottom, #a890f0, #9070d8);
+}
+.type-bug {
+  background: linear-gradient(to bottom, #a8b820, #8d9c1a);
+}
+.type-normal {
+  background: linear-gradient(to bottom, #a8a878, #8d8d5a);
+}
+.type-electric {
+  background: linear-gradient(to bottom, #f8d030, #d4b62a);
+}
+.type-ground {
+  background: linear-gradient(to bottom, #e0c068, #c5a757);
+}
+.type-fairy {
+  background: linear-gradient(to bottom, #ee99ac, #d98295);
+}
+.type-fighting {
+  background: linear-gradient(to bottom, #c03028, #9d2721);
+}
+.type-psychic {
+  background: linear-gradient(to bottom, #f85888, #d94770);
+}
+.type-rock {
+  background: linear-gradient(to bottom, #b8a038, #9a8530);
+}
+.type-steel {
+  background: linear-gradient(to bottom, #b8b8d0, #9a9ab1);
+}
+.type-ice {
+  background: linear-gradient(to bottom, #98d8d8, #7fbdbd);
+}
+.type-ghost {
+  background: linear-gradient(to bottom, #705898, #5a497a);
+}
+.type-dragon {
+  background: linear-gradient(to bottom, #7038f8, #5c2fd1);
+}
+.type-dark {
+  background: linear-gradient(to bottom, #705848, #5a473a);
+}
+
+.character-card.type-normal {
+  background: linear-gradient(
+    to bottom,
+    rgba(200, 200, 160, 0.5),
+    rgba(180, 180, 100, 0.1)
+  );
+  border: 2px solid rgba(200, 200, 160, 0.6);
+}
+
+.character-card.type-grass {
+  background: linear-gradient(
+    to bottom,
+    rgba(102, 255, 102, 0.5),
+    rgba(51, 204, 51, 0.1)
+  );
+  border: 2px solid rgba(102, 255, 102, 0.6);
+}
+
+.character-card.type-fire {
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 102, 0, 0.5),
+    rgba(204, 51, 0, 0.1)
+  );
+  border: 2px solid rgba(255, 102, 0, 0.6);
+}
+
+.character-card.type-water {
+  background: linear-gradient(
+    to bottom,
+    rgba(102, 153, 255, 0.5),
+    rgba(51, 102, 255, 0.1)
+  );
+  border: 2px solid rgba(51, 102, 255, 0.6);
+}
+
+.character-card.type-electric {
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 102, 0.5),
+    rgba(255, 221, 0, 0.1)
+  );
+  border: 2px solid rgba(255, 221, 0, 0.6);
+}
+
+.character-card.type-poison {
+  background: linear-gradient(
+    to bottom,
+    rgba(204, 102, 255, 0.5),
+    rgba(153, 51, 204, 0.1)
+  );
+  border: 2px solid rgba(153, 51, 204, 0.6);
+}
+
+.character-card.type-ground {
+  background: linear-gradient(
+    to bottom,
+    rgba(230, 190, 120, 0.5),
+    rgba(200, 160, 80, 0.1)
+  );
+  border: 2px solid rgba(230, 190, 120, 0.6);
+}
+
+.character-card.type-flying {
+  background: linear-gradient(
+    to bottom,
+    rgba(180, 150, 255, 0.5),
+    rgba(140, 110, 255, 0.1)
+  );
+  border: 2px solid rgba(140, 110, 255, 0.6);
+}
+
+.character-card.type-bug {
+  background: linear-gradient(
+    to bottom,
+    rgba(192, 220, 60, 0.5),
+    rgba(156, 180, 30, 0.1)
+  );
+  border: 2px solid rgba(156, 180, 30, 0.6);
+}
+
+.character-card.type-fairy {
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 170, 200, 0.5),
+    rgba(255, 140, 180, 0.1)
+  );
+  border: 2px solid rgba(255, 140, 180, 0.6);
+}
+
+.character-card.type-fighting {
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 80, 70, 0.5),
+    rgba(204, 40, 30, 0.1)
+  );
+  border: 2px solid rgba(204, 40, 30, 0.6);
+}
+
+.character-card.type-psychic {
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 102, 153, 0.5),
+    rgba(204, 51, 102, 0.1)
+  );
+  border: 2px solid rgba(204, 51, 102, 0.6);
+}
+
+.character-card.type-rock {
+  background: linear-gradient(
+    to bottom,
+    rgba(220, 190, 80, 0.5),
+    rgba(180, 160, 50, 0.1)
+  );
+  border: 2px solid rgba(180, 160, 50, 0.6);
+}
+
+.character-card.type-steel {
+  background: linear-gradient(
+    to bottom,
+    rgba(200, 200, 255, 0.5),
+    rgba(160, 160, 210, 0.1)
+  );
+  border: 2px solid rgba(160, 160, 210, 0.6);
+}
+
+.character-card.type-ice {
+  background: linear-gradient(
+    to bottom,
+    rgba(160, 255, 255, 0.5),
+    rgba(120, 220, 220, 0.1)
+  );
+  border: 2px solid rgba(120, 220, 220, 0.6);
+}
+
+.character-card.type-ghost {
+  background: linear-gradient(
+    to bottom,
+    rgba(150, 120, 200, 0.5),
+    rgba(110, 90, 170, 0.1)
+  );
+  border: 2px solid rgba(110, 90, 170, 0.6);
+}
+
+.character-card.type-dragon {
+  background: linear-gradient(
+    to bottom,
+    rgba(153, 102, 255, 0.5),
+    rgba(102, 51, 255, 0.1)
+  );
+  border: 2px solid rgba(102, 51, 255, 0.6);
+}
+
+.character-card.type-dark {
+  background: linear-gradient(
+    to bottom,
+    rgba(130, 100, 90, 0.5),
+    rgba(100, 70, 60, 0.1)
+  );
+  border: 2px solid rgba(100, 70, 60, 0.6);
+}
+
+.character-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.character-card h3,
+.character-card .card-title {
+  color: #fff;
+  text-shadow: 0 0 6px rgba(255, 255, 255, 0.5);
+}
+
+.character-card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2), 0 15px 30px rgba(0, 0, 0, 0.4);
+}
+
+.type-symbol .type-grass {
+  background: rgba(92, 169, 53, 0.7);
+}
+.type-symbol .type-fire {
+  background: rgba(213, 103, 35, 0.7);
+}
+.type-symbol .type-water {
+  background: rgba(74, 108, 211, 0.7);
+}
+.type-symbol .type-normal {
+  background: rgba(141, 141, 102, 0.7);
+}
+.type-symbol .type-poison {
+  background: rgba(125, 48, 125, 0.7);
+}
+.type-symbol .type-electric {
+  background: rgba(212, 182, 42, 0.7);
+}
+.type-symbol .type-ice {
+  background: rgba(127, 189, 189, 0.7);
+}
+.type-symbol .type-fighting {
+  background: rgba(157, 39, 33, 0.7);
+}
+.type-symbol .type-ground {
+  background: rgba(197, 167, 87, 0.7);
+}
+.type-symbol .type-flying {
+  background: rgba(144, 112, 216, 0.7);
+}
+.type-symbol .type-psychic {
+  background: rgba(217, 71, 112, 0.7);
+}
+.type-symbol .type-bug {
+  background: rgba(141, 156, 26, 0.7);
+}
+.type-symbol .type-rock {
+  background: rgba(154, 133, 48, 0.7);
+}
+.type-symbol.type-ghost {
+  background: rgba(90, 73, 122, 0.7);
+}
+.type-symbol .type-dragon {
+  background: rgba(92, 47, 209, 0.7);
+}
+.type-symbol .type-dark {
+  background: rgba(90, 71, 58, 0.7);
+}
+.type-symbol .type-steel {
+  background: rgba(154, 154, 177, 0.7);
+}
+.type-symbol .type-fairy {
+  background: rgba(217, 130, 149, 0.7);
+}

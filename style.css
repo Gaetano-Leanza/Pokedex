@@ -26,3 +26,11 @@
   background-color: #ccc;
   cursor: not-allowed;
 }
+
+.loading {
+  color: white;
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 50px;
+  grid-column: 1 / -1;
+}
